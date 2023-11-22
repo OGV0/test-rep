@@ -1,0 +1,64 @@
+._1 {
+    background-color: gray;
+    color: #FFF;
+}
+._2 {
+    background-color: white;
+    color: #000;
+}
+ul li:nth-child(3):hover{
+    cursor: pointer;
+}
+ul li:nth-child(5):hover{
+    cursor: pointer;
+}
+ul li:nth-child(4):hover{
+    cursor: pointer;
+    background-color: lightblue
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+a {
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+ul,ol{
+    list-style: none;
+}
+ul , ol {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+  /* All Layouts: Default to block */
+  ul, ol {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 1024px) {
+    body {
+      display: flex;
+    }
+  
+    ul, ol {
+      flex: 1; /* Occupy equal space */
+      margin-right: 20px;
+    }
+  }
+  
+  /* Tablet and Mobile Layout */
+  @media (max-width: 1023px) {
+    ul, ol {
+      display: block;
+    }
+  }
+  
