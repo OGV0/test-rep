@@ -1,48 +1,61 @@
 /* Common styles */
-.section {
-    margin-bottom: 20px;
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .section {
+    flex: 1 1 30%; /* Adjust width as needed */
     padding: 15px;
     border: 1px solid #ccc;
   }
   
-.section a {
-  display: block;
-  margin-top: 10px;
-}
-
-/* Desktop Layout */
-@media (min-width: 1024px) {
-  .main,
-  .basic-info,
-  .childhood {
-    width: 30%;
+  /* Desktop Layout */
+  @media (min-width: 1024px) {
+    .section {
+      flex-basis: calc(50% - 10px); /* Two blocks in a row */
+    }
+    
+    /* Arrange blocks in two rows */
+    .basic-info,
+    .childhood,
+    .school-years {
+      order: 1; /* First row */
+    }
+  
+    .extracurricular,
+    .university {
+      order: 2; /* Second row */
+    }
   }
-
- .school-years,
- .extracurricular,
- .university {
-   width: 30%;
-}
-  /* Adjust widths and styles for other sections */
-}
-
-/* Tablet Layout */
-@media (max-width: 1023px) and (min-width: 769px) {
-  .main,
-  .basic-info,
-  .childhood,
-  .school-years,
-  .extracurricular,
-  .university {
-    width: 45%;
+  
+  /* Tablet Layout */
+  @media (max-width: 1023px) and (min-width: 769px) {
+    .section {
+      flex-basis: 45%; /* Two blocks in a row */
+    }
+  
+    /* Arrange blocks in three rows */
+    .basic-info,
+    .childhood {
+      order: 1; /* First row */
+    }
+  
+    .school-years,
+    .extracurricular {
+      order: 2; /* Second row */
+    }
+  
+    .university {
+      order: 3; /* Third row */
+    }
   }
-  /* Adjust widths for other sections */
-}
-
-/* Mobile Layout */
-@media (max-width: 768px) {
-  .section {
-      width: 100%;
+  
+  /* Mobile Layout */
+  @media (max-width: 768px) {
+    .section {
+      flex-basis: 100%; /* One block per row */
     }
   }
   
