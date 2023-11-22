@@ -1,16 +1,17 @@
 
-.nth1 {
-    background-color: gray;
-    color: #FFF;
-}
-.nth2 {
-    background-color: white;
-    color: #000;
-}
 table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    tr:nth-child(odd) {
+        background-color: gray;
+        color: #FFF;
+    }
+    
+    tr:nth-child(even) {
+        background-color: white;
+        color: #000;
+    }
 }
 table,th,td {
     border: 2px solid black;
@@ -27,3 +28,55 @@ a{
 h2 {
     text-align: center;
 }
+
+/* Common styles for table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Styles for table headers */
+  .table th {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Styles for table data cells */
+  .table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 1024px) {
+    .table th {
+      font-size: 130%; /* Increase font size for table headers by 30% */
+    }
+  
+    .table td {
+      font-size: 120%; /* Increase font size for table rows by 20% */
+    }
+  }
+  
+  /* Tablet Layout */
+  @media (max-width: 1023px) and (min-width: 769px) {
+    .table th {
+      font-size: 120%; /* Increase font size for table headers by 20% */
+    }
+  
+    .table td {
+      font-size: 110%; /* Increase font size for table rows by 10% */
+    }
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 768px) {
+    .table th {
+      font-size: 110%; /* Increase font size for table headers by 10% */
+    }
+  
+    .table td {
+      font-size: 100%; /* Default font size for table rows */
+    }
+  }
+  
