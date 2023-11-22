@@ -6,27 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="biog.css">
+    <!-- CSS styles -->
+    <style>
+        /* Styles for button */
+        .button {
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: magenta;
+            color: yellow;
+        }
+
+        .button:active {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* Styles for paragraphs */
+        p {
+            background-color: aqua;
+            color: blueviolet;
+        }
+
+        /* Styles for each section */
+        #sect2 {
+            background-color: azure;
+            color: brown;
+        }
+
+        #sect3 {
+            background-color: tomato;
+            color: cyan;
+        }
+
+        #sect4 {
+            background-color: yellow;
+            color: darkred;
+        }
+
+        #sect5 {
+            background-color: chartreuse;
+            color: red;
+        }
+
+        /* General styles */
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        a {
+            font-style: italic;
+        }
+
+        /* Borders for divs */
+        div {
+            border: 1px solid black; /* Modified to add solid border */
+            margin-bottom: 10px; /* Added margin for spacing */
+        }
+
+        /* Media queries for different screen sizes */
+        @media (min-width: 992px) {
+            .section {
+                display: inline-block;
+                width: calc(50% - 40px);
+                margin: 10px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .section {
+                width: calc(50% - 40px);
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .section {
+                width: calc(100% - 40px);
+                margin: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="section" id="1">
-            <h1>Автобіографія Гояна Олександра Васильовича</h1>
-            <a href="index.html">Назад на головну</a>
-            <article id="zmist">
-                <h3>Зміст</h3>
-            </article>
-            <article id="sect1">
-                <!-- Section 1 content -->
-            </article>
-        </div>
-
-        <!-- Sections 2 to 6 -->
-
+    <div class="section" id="1">
+        <h1>Автобіографія Гояна Олександра Васильовича</h1>
+        <a href="index.html">Назад на головну</a>
+        <article id="zmist">
+            <h3>Зміст</h3>
+        </article>
+        <article id="sect1">
+            <!-- Section 1 content -->
+        </article>
     </div>
-    <a href="#">Уверх</a>
 
-    <script src="script.js"></script>
+    <div class="section" id="2">
+        <h2>Базова Інформація</h2>
+        <p>Гоян Олександр Васильович – молодий вчений у галузі комп'ютерних наук, який народився 15 грудня 2006 року.
+            Він є першокурсником.</p>
+        <a href="#zmist">Назад до змісту</a>
+        <article id="sect2">
+            <!-- Section 2 content -->
+        </article>
+    </div>
+
+    <div class="section" id="3">
+        <h2>Дитинство</h2>
+        <p>Народився в селі Вовчківці Коломийського району.Там він провів своє дитинство</p>
+        <a href="#zmist">Назад до змісту</a>
+        <article id="sect3">
+            <!-- Section 3 content -->
+        </article>
+    </div>
+
+    <div class="section" id="4">
+        <h2>Шкільні роки</h2>
+        <p>Навчався в Вовчківському ліцеї ім. Василя Равлюка.Відзначився тим що брав участь в олімпіадах з біології</p>
+        <a href="#zmist">Назад до змісту</a>
+        <article id="sect4">
+            <!-- Section 4 content -->
+        </article>
+    </div>
+
+    <div class="section" id="5">
+        <h2>Поза школою</h2>
+        <p>Інтересувався наукою,програмуванням і покращував знання в цих дисциплінах</p>
+        <a href="#zmist">Назад до змісту</a>
+        <article id="sect5">
+            <!-- Section 5 content -->
+        </article>
+    </div>
+
+    <div class="section" id="6">
+        <h2>Університет</h2>
+        <p>Є першокурсником Прикарпатського Національного Університету</p>
+        <a href="#zmist">Назад до змісту</a>
+        <article id="sect6">
+            <!-- Section 6 content -->
+        </article>
+    </div>
+
+    <a href="#">Уверх</a>
 </body>
 
 </html>
