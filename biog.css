@@ -76,23 +76,9 @@ body {
     padding: 15px;
     border: 1px solid #ccc;
   }
+
   
-  /* Desktop Layout */
-  @media (min-width: 1024px) {
-    
-  body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .section {
-    flex: 1 1 30%; 
-    padding: 15px;
-    border: 1px solid #ccc;
-  }
-  
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     #main {
       flex: none; 
       width: 100%; 
@@ -109,6 +95,33 @@ body {
       flex-basis: 45%; 
     }
   }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    .section {
+      flex-basis: 45%; 
+    }
+    .basic-info,
+    .childhood {
+      order: 1; 
+    }
+  
+    .school-years,
+    .extracurricular {
+      order: 2;  
+    }
+  
+    .university {
+      order: 3;  
+    }
+  }
+  
+  
+  @media (max-width: 769px) {
+    .section {
+      flex-basis: 100%; 
+    }
+  }
+
   .back-to-top {
     position: fixed;
     bottom: 20px;
