@@ -1,40 +1,21 @@
-.button {
-    background-color: blue;
-    color: white;
+
+.nth1 {
+    background-color: gray;
+    color: #FFF;
+}
+.nth2 {
+    background-color: white;
+    color: #000;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table,th,td {
     border: 2px solid black;
-    padding: 10px 20px;
+    padding: 10px;
     text-align: center;
-    display: inline-block;
-    margin: 5px;
-}
-.button:hover {
-    background-color: magenta;
-    color: yellow;
-}
-.button:active {
-    background-color: yellow;
-    color: black;
-}
-p {
-    background-color: aqua;
-    color: blueviolet;
-}
-#sect2{
-    background-color: azure;
-    color: brown;
-}
-    
-#sect3{
-    background-color: tomato;
-    color: cyan;
-}
-#sect4{
-    background-color: yellow;
-    color: darkred;
-}
-#sect5{
-    background-color: chartreuse;
-    color: red;
 }
 h1 {
     text-align: center;
@@ -43,87 +24,6 @@ h1 {
 a{
     font-style: italic;
 }
-#zmist {
-    align-items: center;
+h2 {
+    text-align: center;
 }
-#sect1,#sect2,#sect3,#sect4,#sect5{
-    font-size: 120%;
-}
-#sect1 h2,#sect2 h2,#sect3 h2,#sect4 h2,#sect5 h2{
-    font-size: 144%;
-}
-a[href="#zmist"]{
-    font-weight: bold;
-}
-a[href="zmist"]{
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .section {
-    flex: 1 1 30%; 
-    padding: 15px;
-    border: 1px solid #ccc;
-  }
-
-  
-  @media (min-width: 992px) {
-    #main {
-      flex: none; 
-      width: 100%; 
-    }
-    
-    .basic-info,
-    .childhood,
-    .school-years {
-      flex-basis: 30%; 
-    }
-  
-    .extracurricular,
-    .university {
-      flex-basis: 45%; 
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 992px) {
-    .section {
-      flex-basis: 45%; 
-    }
-    .basic-info,
-    .childhood {
-      order: 1; 
-    }
-  
-    .school-years,
-    .extracurricular {
-      order: 2;  
-    }
-  
-    .university {
-      order: 3;  
-    }
-  }
-  
-  
-  @media (max-width: 769px) {
-    .section {
-      flex-basis: 100%; 
-    }
-  }
-
-  .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
