@@ -1,8 +1,8 @@
-._1 {
+.1 {
     background-color: gray;
     color: #FFF;
 }
-._2 {
+.2 {
     background-color: white;
     color: #000;
 }
@@ -37,27 +37,17 @@ ul , ol {
 
 
 
-  /* All Layouts: Default to block */
-  ul, ol {
-    display: block;
-    margin-bottom: 20px;
+
+  @media (min-width: 992px) {
+    div {
+        display: flex;
+        flex-basis: 45%;
+    }
+
+
   }
-  
-  /* Desktop Layout */
-  @media (min-width: 1024px) {
+  @media (max-width: 992px) {
     body {
-      display: flex;
-    }
-  
-    ul, ol {
-      flex: 1; /* Occupy equal space */
-      margin-right: 20px;
-    }
-  }
-  
-  /* Tablet and Mobile Layout */
-  @media (max-width: 1023px) {
-    ul, ol {
       display: block;
     }
   }
